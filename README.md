@@ -15,7 +15,7 @@ Learn how to perform statistics with Python.
   - Grab a sports theme dataset you like and select an attribute from the dataset. Calculate the mode, median, standard deviation, and arithmetic mean.
 
 - Exercise 2: 
-  - Continuing with the sports topic data, select two attributes and calculate their correlation..
+  - Continuing with the sports topic data, select two attributes and calculate their correlation.
   
 ### Level 2
 
@@ -24,7 +24,7 @@ Learn how to perform statistics with Python.
 
 ### Level 3
 
-- Exercise 3: 
+- Exercise 4: 
   - Continuing with the sports theme data, select an attribute and calculate the geometric mean and harmonic mean.
 
 
