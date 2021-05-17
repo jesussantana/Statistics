@@ -1,19 +1,11 @@
 # Variable Scaling
 
-import pandas as pd 
 from sklearn.preprocessing import StandardScaler
 
-def transform(X_train, X_test, column):
+def transform(X_train, X_test):
 
-    # fit on training data column
-    scale = StandardScaler().fit(X_train)
+    sc_X = StandardScaler()
+    X_train = sc_X.fit_transform(X_train)
+    X_test = sc_X.transform(X_test)
     
-    # transform the training & Test data column
-    X_train_stand = scale.transform(X_train)
-    
-    X_test_stand = scale.transform(X_train)
-
-    X_train_stand = pd.DataFrame(X_train_stand, columns = column)
-    X_test_stand = pd.DataFrame(X_test_stand, columns = column)
-
-    return X_train_stand, X_test_stand
+    return X_train, X_test
